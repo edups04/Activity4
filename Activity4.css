@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Font';
+    src: url(fonts/Refrigerator\ Deluxe.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'FontBold';
+    src: url(fonts/Refrigerator\ Deluxe\ Heavy.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'FontBold2';
+    src: url(fonts/Refrigerator\ Deluxe\ Bold.otf) format(opentype);
+}
+
+body{
+    background-image: url(pics/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited, a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+
+.body2{
+    background-image: url(pics/cardbg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'FontBold', sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.5px black;
+    text-align: left;
+    margin-top: 10px;
+}
+
+h2{
+    font-family: 'FontBold', sans-serif;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.5px black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 150px;
+    gap: 10px; 
+}
+
+.card {
+    background-color: rgb(0, 0, 0);
+    width: 472px; 
+    height: 300px; 
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: skewX(-5deg);
+    transform-origin: left; 
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+}
+
+.card h2 {
+    margin-top: 250px; 
+    color: white;    
+}
+
+
+.card2 {
+    background-color: rgb(0, 0, 0);
+    width: 472px; 
+    height: 300px; 
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: skewX(-5deg);
+    transform-origin: left; 
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+}
+
+.card2 h2 {
+    margin-top: 250px; 
+    color: white; 
+    font-size: 50px;   
+}
+
+.card3 {
+    background-color: white;
+    width: 472px; 
+    height: 300px; 
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: skewX(-5deg);
+    transform-origin: left; 
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+}
+
+.card3 h2 {
+    margin-top: 250px; 
+    color: white;    
+}
+
+.card:hover {
+    transform: scale(1.12) skewX(-5deg); 
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.card2:hover {
+    transform: scale(1.12) skewX(-5deg); 
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.card3:hover {
+    transform: scale(1.12) skewX(-5deg); 
+    border-color: rgba(255, 255, 255, 0.6);
+}
+

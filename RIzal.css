@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Font';
+    src: url(fonts/Refrigerator\ Deluxe.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'FontBold';
+    src: url(fonts/Refrigerator\ Deluxe\ Heavy.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'FontBold2';
+    src: url(fonts/Refrigerator\ Deluxe\ Bold.otf) format(opentype);
+}
+
+body{
+    background-image: url(pics/RizalBlur.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.about{
+    font-family: 'FontBold', sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+    width: 1000px; 
+    height: 500px; 
+    margin: 50px auto 0 auto; 
+    padding: 100px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+}
+
+
+.card2 {
+    background-color: rgb(0, 0, 0);
+    width: 590px; 
+    height: 300px; 
+    margin: 10px;
+    margin-left: -599px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform-origin: right; 
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+}
+
+.card3 {
+    background-color: rgb(0, 0, 0);
+    width: 590px; 
+    height: 300px; 
+    margin-top: -320px;
+    margin-left: 610px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform-origin: right; 
+    backdrop-filter: blur(10px);
+    transition:ease-out 0.3s;
+}
+
+.card2, .card3 {
+    position: relative;
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.12);  
+    border-color: rgba(255, 255, 255, 0.6);
+    z-index: 3;
+}
+
+
